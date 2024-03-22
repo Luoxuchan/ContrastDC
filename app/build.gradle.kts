@@ -11,8 +11,8 @@ android {
         applicationId = "com.luoxuchan.contrastdc"
         minSdk = 24
         targetSdk = 34
-        versionCode = 24032202
-        versionName = "1.1 Alpha 1"
+        versionCode = 24032205
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

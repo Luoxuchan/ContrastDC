@@ -1,5 +1,6 @@
 package com.luoxuchan.contrastdc
 
+import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -88,6 +89,12 @@ fun AppContent() {
 
         // 当无障碍服务已启用时，显示“遮罩开关”及其开关
         if (isServiceEnabled) {
+            // 获取Context实例，适用于Composable函数。对于非Composable函数，使用相应传入的Context实例
+            val context: Context = LocalContext.current
+            // 获取NotificationManager实例
+            val notificationManager: NotificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            // 取消ID为1的通知
+            notificationManager.cancel(1)
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text("遮罩开关")
                 Switch(
