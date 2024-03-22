@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Contrast DC</string>
+    <string name="accessibility_service_description">提供对比度调整功能以改善类DC调光下的屏幕可读性。</string>
+</resources>
